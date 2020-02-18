@@ -4,6 +4,9 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/*
+要求创建3个线程，这3个线程循环执行+5操作，当加到目标值时停止。
+ */
 public class ThreeThreads {
 
     private static int count = 0;
@@ -15,7 +18,7 @@ public class ThreeThreads {
         Condition c2 = lock.newCondition();
         Condition c3 = lock.newCondition();
 
-        int target = 10086;
+        int target = 75;
 
         Thread t1 = new Thread(() -> {
             while (!Thread.currentThread().isInterrupted()) {
