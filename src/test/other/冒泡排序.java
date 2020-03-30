@@ -1,8 +1,8 @@
 package test.other;
 
-public class BubbleSort {
+public class 冒泡排序 {
     public static void main(String[] args) {
-        int[] arr = {8, 4, 6, 2, 1, 9, 21};
+        int[] arr = {8, 4, 6, 2, 1, 9, 21, 12, 123};
         arr = maoPao(arr);
         for (int item : arr) {
             System.out.println(item);
